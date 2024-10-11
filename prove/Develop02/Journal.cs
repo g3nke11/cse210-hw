@@ -41,10 +41,10 @@ public class Journal
         string filename = Console.ReadLine();
         using (StreamWriter outputFile = new StreamWriter(filename))
         {
-            outputFile.WriteLine("Date,Prompt,Response");
+            outputFile.WriteLine("Writer,Date,Prompt,Response");
             foreach(Entry entry in _entries)
             {
-                outputFile.WriteLine($"{entry._date},{entry._prompt},{entry._response}");
+                outputFile.WriteLine($"{entry._writer},{entry._date},{entry._prompt},{entry._response}");
             }
         }
     }
@@ -61,9 +61,10 @@ public class Journal
         {
             string[] parts = line.Split(",");
             Entry entry = new Entry();
-            entry._date = parts[0];
-            entry._prompt = parts[1];
-            entry._response = parts[2];
+            entry._writer = parts[0];
+            entry._date = parts[1];
+            entry._prompt = parts[2];
+            entry._response = parts[3];
             _entries.Add(entry);
         }
     }
