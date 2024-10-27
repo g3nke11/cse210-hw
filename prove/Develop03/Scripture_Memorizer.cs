@@ -90,6 +90,7 @@ public class Scripture_Memorizer
                 break;
             }
             HideWords(_verse);
+            Console.WriteLine();
             Console.Write("Press enter to continue, type 'quit' to finish or 'restart' to show verse. ->");
             String answer = Console.ReadLine();
             if (answer == "quit")
@@ -124,7 +125,7 @@ public class Scripture_Memorizer
                 _verse[randomNumber].Hide();
                 counter += 1;
             }
-            if (IsCompletelyHidden())
+            if (IsCompletelyHidden(_verse))
             {
                 break;
             }
