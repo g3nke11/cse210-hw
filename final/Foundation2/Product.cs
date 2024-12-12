@@ -21,9 +21,4 @@ public class Product
     {
         return _pricePerUnit * _quantity;
     }
-
-    public void ChangeQuantity(double newQuantity)
-    {
-        _quantity = newQuantity;
-    }
 }

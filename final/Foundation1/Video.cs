@@ -19,6 +19,11 @@ public class Video {
         Console.WriteLine($"Duration: {_length} minutes\n");
     }
 
+    public void AddComment(Comment comment)
+    {
+        _comments.Add(comment);
+    }
+
     public void DisplayComments()
     {
         Console.WriteLine("Comments:");
