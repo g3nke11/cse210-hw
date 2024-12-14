@@ -8,11 +8,11 @@ public class OutdoorGathering : Event
     }
     public string FullDetails()
     {
-        return $"Outdoor Gathering\n{StandardDetail()}\nExpected Weather: {_weather}";
+        return $"Outdoor Gathering\n{StandardDetail()}Expected Weather: {_weather}\n";
     }
 
     public string ShortDescription()
     {
-        return $"Outdoor Gathering\n{_title}\n{_description}\n{_date}";
+        return $"Outdoor Gathering\n{_title}\n{_description}\n{_date}\n";
     }
 }

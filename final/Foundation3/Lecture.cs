@@ -11,11 +11,11 @@ public class Lecture : Event
 
     public string FullDetails()
     {
-        return $"Lecture\nSpeaker: {_speaker}\n{StandardDetail()}\nCapacity: {_capacity}";
+        return $"Lecture\nSpeaker: {_speaker}\n{StandardDetail()}Capacity: {_capacity}\n";
     }
 
     public string ShortDescription()
     {
-        return $"Lecture\n{_title}\n{_description}\n{_date}";
+        return $"Lecture\n{_title}\n{_description}\n{_date}\n";
     }
 }

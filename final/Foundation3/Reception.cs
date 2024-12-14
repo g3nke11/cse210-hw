@@ -8,16 +8,21 @@ public class Reception : Event
 
     public string FullDetails()
     {
-        return $"Reception\n{StandardDetail()}";
+        return $"Reception\n{StandardDetail()}Please RSVP\n";
     }
 
     public string ShortDescription()
     {
-        return $"Reception\n{_title}\n{_description}\n{_date}";
+        return $"Reception\n{_title}\n{_description}\n{_date}\n";
     }
 
     public void RSVP()
     {
         _rsvp = true;
+    }
+
+    public bool Attendance()
+    {
+        return _rsvp;
     }
 }

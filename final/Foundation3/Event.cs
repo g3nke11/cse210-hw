@@ -17,6 +17,6 @@ public class Event
 
     public string StandardDetail()
     {
-        return $"{_title}\n{_description}\n{_date} {_time}\n{_address.ReturnAddress()}";
+        return $"{_title}\n{_description}\n{_date} {_time}\n{_address.ReturnAddress()}\n";
     }
 }
